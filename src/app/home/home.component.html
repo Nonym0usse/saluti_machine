@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <h1 class="txt">Choisir une boisson</h1>
+  <div class="card" style="width: 18rem; margin-top: 100px" *ngFor="let singleBeverage of beverage" (click)="order(singleBeverage.beverage.pump)">
+    <img class="card-img-top" src="{{ singleBeverage.beverage.img}}" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">{{ singleBeverage.beverage.beverage_name}}</p>
+    </div>
+  </div>
+  </div>
+</div>
