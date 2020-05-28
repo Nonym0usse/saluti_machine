@@ -42,11 +42,10 @@ export class HomeComponent implements OnInit {
 
 
  order(pump){
-    this.router.navigate(['/qrcode']);
+    //this.router.navigate(['/qrcode']);
 
   if(this._electronService.isElectronApp) {
-     let response: string = this._electronService
-       .ipcRenderer.sendSync('pump', pump);
+     let response: string = this._electronService.ipcRenderer.sendSync('pump', pump);
      console.log(response);
    }
  }

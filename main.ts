@@ -105,5 +105,5 @@ ipcMain.on('pump', (event, arg) => {
     }
   }).start();
 
-  event.reply('pump', 'OK')
+  event.returnValue = "received";
 });
