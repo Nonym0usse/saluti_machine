@@ -91,7 +91,7 @@ ipcMain.on('pump', (event, arg) => {
 
   Cylon.robot({
     connections: {
-      arduino: { adaptor: 'firmata', port: 'COM3' }
+      arduino: { adaptor: 'firmata', port: 'COM6' }
     },
     devices: {
       motor: { driver: 'motor', pin: arg }
